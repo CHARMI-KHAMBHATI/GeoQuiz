@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.charmi.geoquiz.QuizActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:text="Constantinople is the largest city in Turkey"
+        android:id="@+id/question_text_view"/>
+    
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal|center_vertical"
+    android:orientation="horizontal">
+
+        <Button
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="True" android:id="@+id/true_button"/>
+
+        <Button
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="False" android:id="@+id/false_button"/>
+
+
+    </LinearLayout>
+
+    <Button android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="Next" android:id="@+id/next_button"
+            android:layout_gravity="right|bottom"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Previous"
+            android:textSize="20dp" android:id="@+id/prev_button"
+            android:layout_gravity="left|bottom"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Cheat!"
+            android:textSize="20dp" android:layout_gravity="center_horizontal|bottom"
+            android:id="@+id/cheat_button"/>
+</FrameLayout>
